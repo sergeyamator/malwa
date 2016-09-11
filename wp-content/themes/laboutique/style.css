@@ -1,0 +1,415 @@
+/*
+Theme Name: La Boutique
+Theme URI: http://http://theme.laboutiquetheme.com/
+Author: Tfingi
+Author URI: http://themeforest.net/user/Tfingi
+Description: La Boutique is a sleek responsive WooCommerce theme expertly crafted with Bootstrap to offer 16 stunning color palettes and plenty of gorgeous user interface elements!
+Version: 1.2
+License: Regular License
+License URI: http://themeforest.net/licenses/regular
+Tags: light, one-column, two-columns, left-sidebar, right-sidebar, fluid-layout, custom-menu, featured-images, full-width-template, post-formats, theme-options, translation-ready
+Text Domain: laboutique
+
+La Boutique’s versatility provides you with the tools to weave elegant eCommerce sites to suit your products and customers.
+*/
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 5px 4px 5px;
+
+}
+
+
+.megamenu_container {
+    height: auto;
+    width: 1170px;
+}
+
+.cart .wc-forward {
+	display: none;
+}
+
+.product-categories li a {
+	font-weight: bold;
+}
+
+.children li a {
+	font-weight: normal;
+}
+
+#menu-catalog-menu-1 li a {
+	font-weight: bold;
+}
+
+.sub-menu {
+	display: none;
+}
+
+.sub-menu  li a {
+	font-weight: normal!important;
+}
+.sub-menu  li ul li a {
+    padding-left: 70px!important;
+}
+.current-menu-item .sub-menu {
+	display: block;
+}
+.sslogo img{
+  max-height: 35px
+}
+#menu-catalog-menu .sub-menu {
+	display: none;
+}
+#menu-catalog-menu-1 .menu-item{
+    position: relative;
+}
+#menu-catalog-menu-1 .menu-item-has-children:before{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 8px;
+    border-color: transparent transparent transparent #ac3048;
+    position: absolute;
+    left: 10px;
+    top: 18px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+#menu-catalog-menu-1 .menu-item-has-children{
+    border-color: transparent transparent transparent #fff;
+}
+#menu-catalog-menu-1 .menu-item-has-children:hover:before{
+    border-color: transparent transparent transparent #ac3048;
+}
+#menu-catalog-menu-1 .menu-item-has-children.active:before{
+    border-color: transparent transparent transparent #ac3048;
+    -moz-transform: rotate(90deg); /* Äëÿ Firefox */
+    -ms-transform: rotate(90deg); /* Äëÿ IE */
+    -webkit-transform: rotate(90deg); /* Äëÿ Safari, Chrome, iOS */
+    -o-transform: rotate(90deg); /* Äëÿ Opera */
+    transform: rotate(90deg);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#menu-catalog-menu-1 li a{
+    padding: 15px 30px;
+}
+#menu-catalog-menu-1 li ul li a{
+    padding-left: 50px;
+}
+#menu-catalog-menu-1 li ul .menu-item-has-children:before{
+    left: 30px;
+}
+.sslogo {
+	right: 0;
+	position: absolute;
+	top: 0;
+}
+
+.span12 {
+	position: relative;
+    display: inline-block;
+}
+.social {
+	// width: 1000px;
+	display: inline-block;
+}
+.social .social-item{
+	width: 32px;
+	height: 32px;
+	background-size: 32px 32px;
+	display: inline-block;
+}
+.social .social-item a{
+	height: 100%;
+	display: block;
+}
+.social .fb {
+	background-image: url('http://malwa.com.ua/wp-content/uploads/2016/04/social_fb.png');
+}
+.social .vk {
+	background-image: url('http://malwa.com.ua/wp-content/uploads/2016/04/social_vk.png');
+}
+.social .ins {
+	background-image: url('http://malwa.com.ua/wp-content/uploads/2016/04/picture_ins.png');
+}
+.ajax_loading_indicator{
+    left: 55% !important;
+}
+.post-list .center {
+    text-align: center;
+    width: 100%;
+}
+
+
+/*Wljomkiss*/
+.upper-line {
+    font-size: 0;
+}
+.header ul, .navi ul{
+    padding: 0;
+    margin: 0;
+}
+.header ul li, .navi ul li {
+    line-height: 10px;
+}
+.header-up{
+    background: #f2a1b4;
+}
+.navi {
+background: #f27089;
+}
+.header-up-menu, .log-in {
+    display: inline-block;
+}
+.header-up .header-up-menu, .navi, .log-in {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.header-up .header-up-menu li, .navi li, .log-in li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+}
+.header-up .header-up-menu li a, .navi li a, .log-in li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+}
+.header-up .header-up-menu li a:hover, .navi li a:hover, .log-in li a:hover{
+    color: #ac3048;
+}
+.header-up.log-in{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 5px;
+    content: '';
+    display:
+}
+.header-up .log-in a {
+    cursor: pointer;
+}
+.header-main {
+     background: url(images/h-back.png) no-repeat;
+}
+.header-main-right {
+	float: right;
+}
+.twitter-bar {
+    margin: 0;
+}
+.form-button{
+    border-radius: 12px;
+    display: inline-block;
+    max-width: 78px;
+    margin-bottom: 15px;
+    background: #e897aa;
+    text-align: center;
+    padding: 0 15px;
+}
+.form-button a{
+    color: #fff;
+    font-size: 14px;
+    vertical-align: top;
+    text-decoration: none;
+    text-align: center;
+}
+.form-button:hover {
+    cursor: pointer;
+}
+.form-button:hover a{
+    color: #ac3048;
+}
+.social-buttons {
+    text-align: center;
+}
+
+.shops {
+    font-size: 0;
+    vertical-align: top;
+}
+.shops a,.shops a:hover {
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+.shops a:first-child{
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.left-footer {
+    text-align: center;
+}
+.header .search, .basket {
+    display: inline-block;
+    vertical-align: top;
+}
+.blurb {
+    font-size: 0;
+}
+.blurb-items {
+    display: inline-block;
+}
+.logo-header-main {
+    background: url('http://malwa.com.ua/wp-content/themes/laboutique/images/logo1.png') no-repeat center;
+    background-size: 80px 80px;
+    width: 80px;
+    height: 80px;
+}
+.mobile-menu {
+    line-height: 10px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 767px){
+    .shops{
+        text-align: center;
+    }
+    #menu-new-main-menu{
+        display: none;
+    }
+    .form-button {
+        max-width: 115px;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .header-span6{
+        display: none;
+    }
+    .menu-item {
+        display: block !important;
+    }
+    .header-main-row .span3{
+    display: inline-block !important;
+    width: inherit;
+    vertical-align: top;
+    }
+    .span3-right {
+        float: right;
+    }
+    .mini-cart {
+            top: 2px !important;
+            right: 3px !important;
+    }
+}
+@media screen and (max-width: 978px){
+    .header-up .header-up-menu {
+        text-align: left;
+    }
+    .basket {
+        float: right;
+    }
+    .mini-cart{
+        padding: 0 !important;
+    }
+    .header .search {
+        padding: 0 !important;
+    }
+    .header-main-right {
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width: 480px){
+    .header-up .header-up-menu, .log-in {
+        text-align: center;
+        display: block;
+    }
+    .header-up-menu li, .log-in li{
+        padding: 12px 20px !important;
+    }
+    .pull-right {
+        float: none;
+    }
+}
